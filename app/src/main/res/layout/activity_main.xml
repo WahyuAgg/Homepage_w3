@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="40dp"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:id="@+id/nama_pt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nama_pt"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+
+        <ImageView
+            android:id="@+id/icon_lokasi"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="10dp"
+            android:paddingTop="3dp"
+            android:layout_below="@id/nama_pt"
+            android:src="@drawable/png_pin" />
+        <TextView
+            android:id="@+id/nama_lokasi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:text="@string/nama_lokasi"
+            android:layout_toRightOf="@id/icon_lokasi"
+            android:layout_alignTop="@id/icon_lokasi"
+            />
+
+        <RelativeLayout
+            android:id="@+id/container_info"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/icon_lokasi"
+            android:padding="5dp"
+            android:background="@drawable/border_rounded">
+
+            <TextView
+                android:id="@+id/informasi"
+                android:textSize="15sp"
+                android:textColor="@color/gray"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:text="@string/informasi"
+                android:layout_height="wrap_content"/>
+            <RelativeLayout
+                android:id="@+id/container_pembaruan_1"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/informasi"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/pembaruan1"
+                    android:textSize="15sp"
+                    android:layout_marginEnd="8dp"
+                    android:textColor="@color/gray"
+                    android:layout_width="wrap_content"
+                    android:text="@string/pembaruan_akhir"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentStart="true"
+                    />
+                <TextView
+                    android:id="@+id/tgl_1"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/orange"
+                    android:layout_width="wrap_content"
+                    android:text="@string/tgl_pembaruan_akhir"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/pembaruan1"
+                    android:layout_toEndOf="@id/pembaruan1"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/container_pembaruan_2"
+                android:layout_marginTop="5dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/container_pembaruan_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/pembaruan2"
+                    android:textSize="15sp"
+                    android:layout_marginEnd="8dp"
+                    android:textColor="@color/gray"
+                    android:layout_width="wrap_content"
+                    android:text="@string/pembaruan_lanjut"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/tgl_2"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/orange"
+                    android:layout_alignBaseline="@id/pembaruan2"
+                    android:layout_toEndOf="@id/pembaruan2"
+                    android:layout_width="wrap_content"
+                    android:text="@string/tgl_pembaruan_lanjut"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/button1_katalog"
+            android:layout_marginLeft="5dp"
+            android:elevation="10dp"
+            android:layout_marginTop="70dp"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_below="@id/container_info"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/white_button"
+            >
+            <ImageView
+                android:id="@+id/img_button1"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/png_search"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                />
+            <TextView
+                android:id="@+id/img_txt1"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:layout_marginBottom="20dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:text="@string/katalog_tender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/button2_tender"
+            android:layout_marginRight="5dp"
+
+            android:elevation="10dp"
+
+            android:background="@drawable/white_button"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@id/button1_katalog"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            >
+            <ImageView
+                android:id="@+id/img_button2"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/png_catalog"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                />
+            <TextView
+                android:id="@+id/img_txt2"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:layout_marginBottom="20dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:text="@string/tender_tersimpan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/button3_laporan"
+            android:elevation="10dp"
+
+            android:layout_marginTop="40dp"
+            android:background="@drawable/white_button"
+            android:layout_alignLeft="@id/button1_katalog"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_below="@id/button1_katalog"
+            >
+            <ImageView
+                android:id="@+id/img_button3"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/png_graph"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                />
+            <TextView
+                android:id="@+id/img_txt3"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:layout_marginBottom="20dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:text="@string/laporan_statistik"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/button4_pengaturan"
+
+            android:layout_marginRight="5dp"
+            android:elevation="10dp"
+            android:background="@drawable/white_button"
+            android:layout_alignTop="@id/button3_laporan"
+            android:layout_alignParentEnd="true"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            >
+            <ImageView
+                android:id="@+id/img_button4"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/png_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                />
+            <TextView
+                android:id="@+id/img_txt4"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:layout_marginBottom="20dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:text="@string/Pengaturan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
