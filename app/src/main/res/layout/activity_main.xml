@@ -31,7 +31,8 @@
             android:layout_marginTop="10dp"
             android:paddingTop="3dp"
             android:layout_below="@id/nama_pt"
-            android:src="@drawable/png_pin" />
+            android:src="@drawable/png_pin"
+            />
         <TextView
             android:id="@+id/nama_lokasi"
             android:layout_width="wrap_content"
@@ -50,7 +51,8 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/icon_lokasi"
             android:padding="5dp"
-            android:background="@drawable/border_rounded">
+            android:background="@drawable/border_rounded"
+            >
 
             <TextView
                 android:id="@+id/informasi"
@@ -59,7 +61,9 @@
                 android:layout_centerHorizontal="true"
                 android:layout_width="wrap_content"
                 android:text="@string/informasi"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                />
+
             <RelativeLayout
                 android:id="@+id/container_pembaruan_1"
                 android:layout_centerHorizontal="true"
@@ -90,7 +94,6 @@
                     android:layout_alignBaseline="@id/pembaruan1"
                     android:layout_toEndOf="@id/pembaruan1"
                     />
-
             </RelativeLayout>
 
             <RelativeLayout
@@ -158,9 +161,7 @@
         <RelativeLayout
             android:id="@+id/button2_tender"
             android:layout_marginRight="5dp"
-
             android:elevation="10dp"
-
             android:background="@drawable/white_button"
             android:layout_alignParentEnd="true"
             android:layout_alignTop="@id/button1_katalog"
@@ -186,7 +187,6 @@
                 android:text="@string/tender_tersimpan"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
                 />
 
         </RelativeLayout>
@@ -220,13 +220,11 @@
                 android:text="@string/laporan_statistik"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
                 />
 
         </RelativeLayout>
         <RelativeLayout
             android:id="@+id/button4_pengaturan"
-
             android:layout_marginRight="5dp"
             android:elevation="10dp"
             android:background="@drawable/white_button"
@@ -254,7 +252,6 @@
                 android:text="@string/Pengaturan"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
                 />
 
         </RelativeLayout>
